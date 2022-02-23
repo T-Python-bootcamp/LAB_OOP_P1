@@ -14,7 +14,7 @@ class Bank:
             print("Withdrawal :{}".format(money))
 
     def bankFees(self):
-        self.balance*93/100
+        self.balance=self.balance*93/100
         print("Fees :{}".format(self.balance))
 
     def display(self):
