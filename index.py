@@ -1,4 +1,4 @@
-import datetime
+
 class Bank:
     def __init__(self,AccountNumber, owner, balance):
         self.AccountNumber=AccountNumber
@@ -14,7 +14,9 @@ class Bank:
         self.balance+=amount
         print(f'{amount} riyals were deposited to your bank balance')
     def bankFees(self):
-        fees=self.balance*93/100
+        newbalance=self.balance*93/100
+        fees=self.balance-newbalance
+        self.balance=fees
         print(f'the bank fees is {fees} riyals')
     def display(self):
         print(f'account number : {self.AccountNumber} \n owner : {self.owner} \n balance : {self.balance}')
