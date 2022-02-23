@@ -16,8 +16,8 @@ class Bank() :
             print("Account balance is less than your withdrawel")
             
     def bankFees(self):
-        realBalance = self.balance * 0.93
-        print("this is the balance after bank fees are cut off: {}".format(realBalance))
+        self.balance = self.balance * 0.93
+        print("this is the balance after bank fees are cut off: {}".format(self.balance))
         
     def display(self):
         print("Account number is: {}".format(self.accountNumber))
