@@ -14,11 +14,11 @@ class Bank:
             print("Withdrawal :{}".format(money))
 
     def bankFees(self):
-        Fees=self.balance*93/100
-        print("Fees :{}".format(Fees))
+        self.balance*93/100
+        print("Fees :{}".format(self.balance))
 
     def display(self):
-        print("Account Number : {} , owner : {} , balance : {}  ...".format(self.AccountNumber,self.owner, self.balance))
+        print("Account Number : {} , owner : {} , balance : {}  ...".format(self.AccountNumber,self.owner,self.balance))
 
 ################################
 
