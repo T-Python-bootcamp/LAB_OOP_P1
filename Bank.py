@@ -5,13 +5,13 @@ class Bank:
         self.balance = balance
 
     def Deposit(self, num):
-        self.newBalance = self.balance + num
-        print(f'deposit successfull, new balance is {self.newBalance}')
+        self.balance = self.balance + num
+        print('deposit successfull, new balance is ,', self.balance)
 
     def Withdrawal(self, num):
         if self.balance > num:
-            self.newBalance = self.balance - num
-            print(f"withdraw is successfull, new balance is {self.newBalance}")
+            self.balance = self.balance - num
+            print(f"withdraw is successfull, new balance is {self.balance}")
         else:
             print("insuffucient balance")
 
@@ -22,15 +22,15 @@ class Bank:
     def display(self):
         print(self.accountNumber)
         print(self.owner)
-        print(self.newBalance)
+        print(self.balance)
     
 
 account = Bank(3456789, "Ahmed", 3000)
 
-print(account.Withdrawal(100))
+account.Withdrawal(100)
 print("_______________")
-print(account.Deposit(200))
+account.Deposit(200)
 print("_______________")
-print(account.bankFees(0.07))
+account.bankFees(0.07)
 print("_______________")
-print(account.display())
+account.display()
