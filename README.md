@@ -23,7 +23,11 @@ owner:Ahmed
 balance:3000
 
 - Applay the following operations:
+
 Withdrawal 100 riyals
+
 Deposit 200 riyals
+
 Display the bank Fees
+
 Display account information
