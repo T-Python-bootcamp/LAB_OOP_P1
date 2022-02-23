@@ -16,7 +16,7 @@ class Bank:
     def bankFees(self):
         newbalance=self.balance*93/100
         fees=self.balance-newbalance
-        self.balance=fees
+        self.balance=newbalance
         print(f'the bank fees is {fees} riyals')
     def display(self):
         print(f'account number : {self.AccountNumber} \n owner : {self.owner} \n balance : {self.balance}')
